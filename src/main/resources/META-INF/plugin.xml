@@ -6,7 +6,29 @@
 
     <description>
         <![CDATA[
-           <h1>JsonToAnyLanguage</h1>
+            <p><a href="">中文文档</a></p>
+            <h1>JsonToAnyLanguage Plugin Introduction</h1>
+            <h2>1. Business Background</h2>
+            <p>In daily development, we often use plug-ins to convert JSON to business entities, but at present,
+            there is no plug-in in the plug-in market that can support generating multiple languages at the same
+            time, resulting in the need to download many plug-ins, which is unacceptable for many
+            obsessive-compulsive disorder patients.</p>
+            <p>Based on this background, I developed this plug-in to integrate these functions into one plug-in.</p>
+            <h2>2. Plug-in download and configuration</h2>
+            <h3>Download</h3>
+            <p>You can directly go to the open source address of the plug-in to download the Release version, and
+            after downloading it locally, the IDE can import it locally. Plug-in open source
+            address:<a href="https://github.com/RmondJone/JsonToAnyLanguage">https://github.com/RmondJone/JsonToAnyLanguage</a></p>
+            <p>You can also search for JsonToAnyLanguage directly in the plugin market to download</p>
+            <img src="http://www.guohanlin.com/images/jsontoanylanguage_anzhuang.png" width="600">
+            <h2>3.The use of plug-ins and effects</h2>
+            <p>The plugin is also very simple to use. Just right-click on the directory where you want to generate
+            code to invoke the plugin menu, then paste the Json string in the plugin pop-up window and select
+            the language you want to generate.</p>
+            <img src="http://www.guohanlin.com/images/jsontoanylanguage_action.gif" width="600">
+            <h2>4. Feedback</h2>
+            <p>Welcome to my telegram group:<a href="https://t.me/YApiQuickType">https://t.me/YApiQuickType</a></p>
+            <img src="http://www.guohanlin.com/images/quicktype_tg_group.jpg" width="300">
         ]]>
     </description>
 
