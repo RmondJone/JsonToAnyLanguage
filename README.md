@@ -53,4 +53,6 @@ Welcome to my telegram group:[https://t.me/YApiQuickType](https://t.me/YApiQuick
 
 <img src="http://www.guohanlin.com/images/quicktype_tg_group.jpg" width="300"/>
 
+If you use YApi, here is another better plugin for JetBrains [https://github.com/RmondJone/YapiQuickType](https://github.com/RmondJone/YapiQuickType)
+
 [中文文档](./README_CN.md)

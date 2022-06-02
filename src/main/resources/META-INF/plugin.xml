@@ -6,7 +6,7 @@
 
     <description>
         <![CDATA[
-            <p><a href="">中文文档</a></p>
+            <p><a href="https://github.com/RmondJone/JsonToAnyLanguage/blob/master/README_CN.md">中文文档</a></p>
             <h1>JsonToAnyLanguage Plugin Introduction</h1>
             <h2>1. Business Background</h2>
             <p>In daily development, we often use plug-ins to convert JSON to business entities, but at present,
@@ -28,6 +28,7 @@
             <img src="http://www.guohanlin.com/images/jsontoanylanguage_action.gif" width="600">
             <h2>4. Feedback</h2>
             <p>Welcome to my telegram group:<a href="https://t.me/YApiQuickType">https://t.me/YApiQuickType</a></p>
+            <p>If you use YApi, here is another better plugin for JetBrains:<a href="https://github.com/RmondJone/YapiQuickType">https://github.com/RmondJone/YapiQuickType</a></p>
             <img src="http://www.guohanlin.com/images/quicktype_tg_group.jpg" width="300">
         ]]>
     </description>

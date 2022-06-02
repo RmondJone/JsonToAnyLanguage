@@ -44,3 +44,5 @@
 QQ群：[264587303](https://jq.qq.com/?_wv=1027&k=96R8fd5v)
 
 <img src="http://www.guohanlin.com/images/qq_group.jpg" width="300"/>
+
+如果你使用了YApi，这里推荐另一个更好用的JetBrains插件 [https://github.com/RmondJone/YapiQuickType](https://github.com/RmondJone/YapiQuickType)
