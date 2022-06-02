@@ -1,0 +1,38 @@
+<idea-plugin>
+    <id>com.guohanlin.JsonToAnyLanguage</id>
+    <name>JsonToAnyLanguage</name>
+    <resource-bundle>LanguageBundle</resource-bundle>
+    <vendor email="2318560278@qq.com">郭翰林</vendor>
+
+    <description>
+        <![CDATA[
+           <h1>JsonToAnyLanguage</h1>
+        ]]>
+    </description>
+
+    <depends>com.intellij.modules.lang</depends>
+
+    <idea-version since-build="203" />
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <projectConfigurable instance="com.guohanlin.ProjectSettingConfig" />
+        <notificationGroup id="JsonToAnyLanguage Error" displayType="BALLOON"
+            isLogByDefault="true" />
+        <notificationGroup id="JsonToAnyLanguage Message" displayType="BALLOON"
+            isLogByDefault="true" />
+    </extensions>
+
+    <project-components>
+        <component>
+            <implementation-class>com.guohanlin.ProjectSettingConfig</implementation-class>
+        </component>
+    </project-components>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.guohanlin.jsonToAnyLanguage" class="com.guohanlin.JsonAction">
+            <add-to-group group-id="NewGroup" anchor="before" relative-to-action="NewFile" />
+        </action>
+    </actions>
+</idea-plugin>
