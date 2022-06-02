@@ -17,7 +17,7 @@ address:[https://github.com/RmondJone/JsonToAnyLanguage](https://github.com/Rmon
 
 You can also search for JsonToAnyLanguage directly in the plugin market to download
 
-![](http://www.guohanlin.com/images/quicktype_anzhuang.png)
+![](http://www.guohanlin.com/images/jsontoanylanguage_anzhuang.png)
 
 ### Plugin configuration
 

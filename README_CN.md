@@ -12,7 +12,7 @@
 
 你也可以直接插件市场搜索JsonToAnyLanguage进行下载
 
-![](http://www.guohanlin.com/images/quicktype_anzhuang.png)
+![](http://www.guohanlin.com/images/jsontoanylanguage_anzhuang.png)
 
 ### 插件配置
 
