@@ -27,6 +27,9 @@
             <p>The plugin is also very simple to use. Just right-click on the directory where you want to generate
             code to invoke the plugin menu, then paste the Json string in the plugin pop-up window and select
             the language you want to generate.</p>
+            <div><img src="http://www.guohanlin.com/images/jsontoanylanguage_one.png" width="600"></div>
+            <div><img src="http://www.guohanlin.com/images/jsontoanylanguage_two.png" width="600"></div>
+            <div><img src="http://www.guohanlin.com/images/jsontoanylanguage_three.png" width="600"></div>
             <h2>4. Feedback</h2>
             <p>Welcome to my telegram group:<a href="https://t.me/YApiQuickType">https://t.me/YApiQuickType</a></p>
             <p>If you use YApi, here is another better plugin for JetBrains:<a href="https://github.com/RmondJone/YapiQuickType">https://github.com/RmondJone/YapiQuickType</a></p>

@@ -33,7 +33,9 @@ The plugin is also very simple to use. Just right-click on the directory where y
 code to invoke the plugin menu, then paste the Json string in the plugin pop-up window and select
 the language you want to generate.
 
-![](http://www.guohanlin.com/images/jsontoanylanguage_action.gif)
+![](http://www.guohanlin.com/images/jsontoanylanguage_one.png)
+![](http://www.guohanlin.com/images/jsontoanylanguage_two.png)
+![](http://www.guohanlin.com/images/jsontoanylanguage_three.png)
 
 # 4. Matters needing attention
 

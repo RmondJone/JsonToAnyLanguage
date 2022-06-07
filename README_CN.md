@@ -24,7 +24,9 @@
 
 插件使用上也非常简单，只需在你想要生成代码的目录上右键即可调用起插件菜单，然后在插件弹窗里粘贴Json字符串、选择你想要生成的语言即可
 
-![](http://www.guohanlin.com/images/jsontoanylanguage_action.gif)
+![](http://www.guohanlin.com/images/jsontoanylanguage_one.png)
+![](http://www.guohanlin.com/images/jsontoanylanguage_two.png)
+![](http://www.guohanlin.com/images/jsontoanylanguage_three.png)
 
 # 四、注意事项
 如果请求QuickTypeNode服务失败，可以尝试配置以下host
