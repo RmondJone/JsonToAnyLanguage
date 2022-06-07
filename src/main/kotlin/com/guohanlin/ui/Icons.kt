@@ -1,6 +1,6 @@
 package com.guohanlin.ui
 
-import com.intellij.ui.IconManager
+import com.intellij.openapi.util.IconLoader
 import javax.swing.Icon
 
 object Icons {
@@ -8,6 +8,6 @@ object Icons {
 
     @JvmStatic
     fun load(path: String): Icon {
-        return IconManager.getInstance().getIcon(path, Icons::class.java)
+        return IconLoader.getIcon(path, Icons::class.java)
     }
 }

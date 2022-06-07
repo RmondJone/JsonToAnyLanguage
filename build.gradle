@@ -1,10 +1,12 @@
+import org.apache.tools.ant.filters.EscapeUnicode
+
 plugins {
     id 'org.jetbrains.intellij' version '0.7.3'
     id 'org.jetbrains.kotlin.jvm' version '1.4.32'
 }
 
 group 'com.guohanlin.JsonToAnyLanguage'
-version '1.0.0'
+version '1.0.0-FIX-IU.191'
 
 repositories {
     mavenCentral()
@@ -22,18 +24,33 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '2021.2'
+    version '2019.1'
     pluginName 'JsonToAnyLanguage'
     updateSinceUntilBuild false
 }
 
+//指定IDE运行
+//runIde {
+//    ideDirectory = '/Applications/IntelliJ IDEA 2019.1.app/Contents'
+//}
+
 compileKotlin {
-    kotlinOptions.jvmTarget = "11"
+    kotlinOptions.jvmTarget = "1.8"
 }
 
 compileJava {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(ProcessResources) {
+    filesMatching('**/*.properties') {
+        filter EscapeUnicode
+    }
 }
 
 patchPluginXml {

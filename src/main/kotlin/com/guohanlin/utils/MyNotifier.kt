@@ -1,6 +1,7 @@
 package com.guohanlin.utils
 
-import com.intellij.notification.NotificationGroupManager
+import com.intellij.notification.NotificationDisplayType
+import com.intellij.notification.NotificationGroup
 import com.intellij.notification.NotificationType
 import com.intellij.openapi.project.Project
 import java.util.*
@@ -19,8 +20,7 @@ object MyNotifier {
      */
     @JvmStatic
     fun notifyError(project: Project, content: String) {
-        NotificationGroupManager.getInstance()
-            .getNotificationGroup("JsonToAnyLanguage Error")
+        NotificationGroup("JsonToAnyLanguage Error", NotificationDisplayType.BALLOON, true)
             .createNotification(content, NotificationType.ERROR)
             .notify(project)
     }
@@ -32,9 +32,9 @@ object MyNotifier {
      */
     @JvmStatic
     fun notifyMessage(project: Project, content: String) {
-        val notification = NotificationGroupManager.getInstance()
-            .getNotificationGroup("JsonToAnyLanguage Message")
-            .createNotification(content, NotificationType.INFORMATION)
+        val notification =
+            NotificationGroup("JsonToAnyLanguage Message", NotificationDisplayType.BALLOON, true)
+                .createNotification(content, NotificationType.INFORMATION)
         notification.notify(project)
         //2s之后消失
         Timer().schedule(2000) {

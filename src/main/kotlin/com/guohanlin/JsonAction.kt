@@ -14,7 +14,6 @@ import com.intellij.openapi.actionSystem.LangDataKeys
 import com.intellij.openapi.actionSystem.PlatformDataKeys
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.roots.ModuleRootManager
-import com.intellij.openapi.util.NlsActions
 import com.intellij.psi.PsiDirectory
 import com.intellij.psi.PsiFile
 import com.intellij.psi.PsiManager
@@ -27,8 +26,8 @@ import javax.swing.Icon
  * 作者：郭翰林
  */
 class JsonAction(
-    @NlsActions.ActionText text: String? = message("action.json"),
-    @NlsActions.ActionDescription description: String? = message("action.json"),
+    text: String? = message("action.json"),
+    description: String? = message("action.json"),
     icon: Icon? = Icons.yapiAction
 ) : AnAction(text, description, icon) {
     override fun actionPerformed(e: AnActionEvent) {

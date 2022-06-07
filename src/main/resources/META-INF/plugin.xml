@@ -39,15 +39,11 @@
 
     <depends>com.intellij.modules.lang</depends>
 
-    <idea-version since-build="203" />
+    <idea-version since-build="191" until-build="202.*"/>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
         <projectConfigurable instance="com.guohanlin.ProjectSettingConfig" />
-        <notificationGroup id="JsonToAnyLanguage Error" displayType="BALLOON"
-            isLogByDefault="true" />
-        <notificationGroup id="JsonToAnyLanguage Message" displayType="BALLOON"
-            isLogByDefault="true" />
     </extensions>
 
     <project-components>
