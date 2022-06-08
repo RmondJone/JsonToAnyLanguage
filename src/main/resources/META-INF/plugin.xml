@@ -6,10 +6,9 @@
 
     <description>
         <![CDATA[
-            <p><a href="https://github.com/RmondJone/JsonToAnyLanguage/blob/master/README_CN.md">中文文档</a></p>
             <h1>JsonToAnyLanguage Plugin Introduction</h1>
-            <p>Plugin for converting json string to any language entity</p>
-            <img src="https://plugins.jetbrains.com/files/19297/screenshot_bf07dae2-308f-4ff0-810d-9d87fdff027c" width="600">
+            <p>A plugin for converting json strings to any language entity, currently supported languages are:</p>
+            <p>Java、Kotlin、Dart、TypeScript、OC、Swift、C++、Go</p>
             <h2>1. Business Background</h2>
             <p>In daily development, we often use plug-ins to convert JSON to business entities, but at present,
             there is no plug-in in the plug-in market that can support generating multiple languages at the same
@@ -34,6 +33,7 @@
             <p>Welcome to my telegram group:<a href="https://t.me/YApiQuickType">https://t.me/YApiQuickType</a></p>
             <p>If you use YApi, here is another better plugin for JetBrains:<a href="https://github.com/RmondJone/YapiQuickType">https://github.com/RmondJone/YapiQuickType</a></p>
             <img src="https://plugins.jetbrains.com/files/19297/screenshot_e68b8cc7-4171-41dc-9037-127ff18d4d7f" width="300">
+            <p><a href="https://github.com/RmondJone/JsonToAnyLanguage/blob/master/README_CN.md">中文文档</a></p>
         ]]>
     </description>
 
