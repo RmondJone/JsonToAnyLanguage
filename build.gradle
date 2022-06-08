@@ -29,10 +29,18 @@ intellij {
     updateSinceUntilBuild false
 }
 
-//指定IDE运行
-//runIde {
-//    ideDirectory = '/Applications/IntelliJ IDEA 2019.1.app/Contents'
-//}
+/**
+ * 获取插件描述
+ * @return
+ */
+def readDescription() {
+    def descriptionFile = file("$projectDir/DESCRIPTION.md")
+    String content = ""
+    descriptionFile.eachLine { line ->
+        content = "$content\n$line"
+    }
+    return content
+}
 
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
@@ -54,5 +62,6 @@ tasks.withType(ProcessResources) {
 }
 
 patchPluginXml {
+    pluginDescription = readDescription()
     changeNotes """"""
 }
