@@ -57,7 +57,7 @@ fun checkAddView(parent: Any, child: Component, constraintsInParent: Any?) {
 }
 
 /**
- * generate a com.carzone.jRadioButton
+ * generate a jRadioButton
  */
 fun ButtonGroup.jRadioButton(
     text: String,
@@ -76,7 +76,7 @@ fun ButtonGroup.jRadioButton(
 
 
 /**
- * generate a com.carzone.jVerticalLinearLayout  but return with jpanel
+ * generate a jVerticalLinearLayout  but return with jpanel
  */
 fun Any.jVerticalLinearLayout(
     constraintsInParent: Any? = BorderLayout.CENTER,
@@ -99,7 +99,7 @@ fun Any.jVerticalLinearLayout(
 
 
 /**
- * generate a com.carzone.jHorizontalLinearLayout but return with jpanel
+ * generate a jHorizontalLinearLayout but return with jpanel
  */
 fun Any.jHorizontalLinearLayout(init: JHorizontalLinearLayout.() -> Unit): JPanel {
     val horizontalBox = JHorizontalLinearLayout()
@@ -124,7 +124,7 @@ fun Any.showMessageTip(message: String) {
 
 
 /**
- * generate a com.carzone.jButtonGroup
+ * generate a jButtonGroup
  */
 fun Container.jButtonGroup(init: ButtonGroup.() -> Unit): ButtonGroup {
     val buttonGroup = ButtonGroup()
@@ -219,7 +219,7 @@ fun Any.jTextInput(
 
 
 /**
- * generate a com.carzone.jCheckBox component
+ * generate a jCheckBox component
  */
 fun Any.jCheckBox(
     text: String,
@@ -381,7 +381,7 @@ fun Any.jBorderLayout(init: SimpleBorderLayout.() -> Unit): JPanel {
 
 
 /**
- * com.carzone.addFocusLostListener to JTextField, when focusLost invoke method
+ * addFocusLostListener to JTextField, when focusLost invoke method
  */
 fun JTextField.addFocusLostListener(listener: (e: FocusEvent?) -> Unit) {
     addFocusListener(object : FocusListener {
@@ -398,13 +398,13 @@ fun JTextField.addFocusLostListener(listener: (e: FocusEvent?) -> Unit) {
 
 
 /**
- * the components in com.carzone.alignLeftComponent will be align Left
+ * the components in alignLeftComponent will be align Left
  *
  * for example：
  *
- * com.carzone.jVerticalLinearLayout{
- *    com.carzone.alignLeftComponent {
- *        com.carzone.jLabel("test")
+ * jVerticalLinearLayout{
+ *    alignLeftComponent {
+ *        jLabel("test")
  *    }
  *}
  */
@@ -421,7 +421,7 @@ interface AuxLayout {
 }
 
 /**
- * com.carzone.JVerticalLinearLayout: Box with BoxLayout.Y_AXIS
+ * JVerticalLinearLayout: Box with BoxLayout.Y_AXIS
  */
 class JVerticalLinearLayout : Box(BoxLayout.Y_AXIS) {
 
@@ -462,7 +462,7 @@ class JVerticalLinearLayout : Box(BoxLayout.Y_AXIS) {
 
 
 /**
- * com.carzone.JHorizontalLinearLayout： Box with BoxLayout.X_AXIS
+ * JHorizontalLinearLayout： Box with BoxLayout.X_AXIS
  */
 class JHorizontalLinearLayout : Box(BoxLayout.X_AXIS) {
     /**
@@ -497,7 +497,7 @@ fun SimpleBorderLayout.centerFillContainer(init: SimpleBorderLayout.CenterFillCo
     CenterFillContainer().apply(init)
 
 /**
- * com.carzone.SimpleBorderLayout：JPanel with BorderLayout()
+ * SimpleBorderLayout：JPanel with BorderLayout()
  */
 class SimpleBorderLayout : JPanel(BorderLayout()) {
     var hasPutLeft = false
