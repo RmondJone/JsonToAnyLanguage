@@ -27,6 +27,19 @@ intellij {
     updateSinceUntilBuild false
 }
 
+/**
+ * 获取插件描述
+ * @return
+ */
+def readDescription() {
+    def descriptionFile = file("$projectDir/DESCRIPTION.md")
+    String content = ""
+    descriptionFile.eachLine { line ->
+        content = "$content\n$line"
+    }
+    return content
+}
+
 compileKotlin {
     kotlinOptions.jvmTarget = "11"
 }
@@ -37,5 +50,6 @@ compileJava {
 }
 
 patchPluginXml {
+    pluginDescription = readDescription()
     changeNotes """"""
 }
