@@ -6,7 +6,7 @@ plugins {
 }
 
 group 'com.guohanlin.JsonToAnyLanguage'
-version '1.0.0-FIX-IU.191'
+version '1.1.0-FIX-IU.191'
 
 repositories {
     mavenCentral()
@@ -63,5 +63,9 @@ tasks.withType(ProcessResources) {
 
 patchPluginXml {
     pluginDescription = readDescription()
-    changeNotes """"""
+    changeNotes """
+    1、兼容数组解析
+    </br>
+    1.Compatible with array parsing
+    """
 }
