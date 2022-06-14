@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.guohanlin.JsonToAnyLanguage'
-version '1.0.0'
+version '1.1.0'
 
 repositories {
     mavenCentral()
@@ -51,5 +51,9 @@ compileJava {
 
 patchPluginXml {
     pluginDescription = readDescription()
-    changeNotes """"""
+    changeNotes """
+    1、兼容数组解析
+    </br>
+    1.Compatible with array parsing
+    """
 }

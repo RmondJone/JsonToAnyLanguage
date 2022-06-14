@@ -55,12 +55,19 @@ class JsonAction(
             val modelName = dialog.modelInput.text.toString()
             val selectPlatform = dialog.selectPlatform
             val jsonStr = dialog.textAreaDocument?.text ?: ""
-            val resBody: JSONObject = JSON.parseObject(jsonStr)
+            var resBody: JSONObject? = null
+            if (jsonStr.startsWith("{")) {
+                resBody = JSON.parseObject(jsonStr)
+            }
+            if (jsonStr.startsWith("[")) {
+                val jsonArray = JSON.parseArray(jsonStr)
+                resBody = jsonArray.getJSONObject(0)
+            }
             val needParseField = SharePreferences.get(Constant.NEED_PARSE_FIELD, "")
-            var jsonString = jsonStr
+            var jsonString = JSON.toJSONString(resBody)
             //如果设置中配置了一级解析字段，则从JSON串中配置的一级字段开始解析
             if (!StringUtils.isEmpty(needParseField)) {
-                if (resBody[needParseField] != null) {
+                if (resBody?.get(needParseField) != null) {
                     val jsonSchema = resBody[needParseField] as JSONObject
                     jsonString = JSON.toJSONString(jsonSchema)
                 } else {
